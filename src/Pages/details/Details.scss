@@ -1,0 +1,24 @@
+.details{
+    padding: 2rem;
+
+
+    .country-details{
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .description{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 2rem
+
+          
+        }
+    }
+
+
+}
+
+#dark .details{
+    color: white;
+}
