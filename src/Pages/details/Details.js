@@ -23,19 +23,36 @@ export default function Details() {
   return (
     <>
       <div className="details">
-        <button>Back</button>
+        <Link to="/">
+          <button>Back</button>
+        </Link>
         {countryDetails.map((item) => (
           <div className="country-details">
             <img src={item.flags.png} width={500} />
             <div>
-              <h3>{item.name.common}</h3>
+              <h2>{item.name.common}</h2>
               <div className="description">
                 <div className="left">
-                  <p>Native name: {item.name.nativeName.official}</p>
-                  <p>Population: {item.population}</p>
-                  <p>Region: {item.region}</p>
-                  <p>Sub-region: {item.subregion}</p>
-                  <p>Capital: {item.capital}</p>
+                  <p>
+                    <strong>Native name: </strong>
+                    {item.name.nativeName.official}
+                  </p>
+                  <p>
+                    <strong>Population: </strong>
+                    {item.population}
+                  </p>
+                  <p>
+                    <strong>Region: </strong>
+                    {item.region}
+                  </p>
+                  <p>
+                    <strong>Sub-region: </strong>
+                    {item.subregion}
+                  </p>
+                  <p>
+                    <strong>Capital: </strong>
+                    {item.capital}
+                  </p>
                 </div>
                 <div className="right">
                   <p>Top level domain</p>

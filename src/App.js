@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
+
 import { useState, createContext } from "react";
 import Home from "./component/home/Home";
 import Details from "./Pages/details/Details";
